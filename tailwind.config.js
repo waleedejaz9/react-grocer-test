@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   important: true,
-  prefix: "tw-",
   content: [
     "./index.html",
     // "./src/components/*.{ts,tsx}",
@@ -13,11 +12,10 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      Rubik: ["Rubik", "sans-serif"],
-      Montserrat: ["Montserrat", "sans-serif"],
-      Poppins: ["Poppins", "sans-serif"],
-      Inter: ["Inter", "sans-serif"],
-      Smooch: ["Smooch Sans"],
+
+      Poppins: ["Poppins"],
+      Inter: ["Inter"]
+
     },
     extend: {
       backgroundImage: {
@@ -27,9 +25,11 @@ module.exports = {
       },
       colors: {
         paragraph: "#808080",
+        price: "#434141",
+        buttonColor: "#E74C1B"
       },
       background: () => ({
-        buttonRed: "#EA5323",
+        background: "#F0F4FC"
       }),
       fontSize: {
         45: "38px",
@@ -41,7 +41,10 @@ module.exports = {
       width: {
         80: "80%",
       },
-      height: {},
+      height: {
+        '670px': '670px',
+        '400px': '540px'
+      },
       padding: {},
       zIndex: {},
       borderWidth: {},

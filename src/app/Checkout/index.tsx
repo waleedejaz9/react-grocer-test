@@ -1,18 +1,18 @@
 import Container from "../../components/Container"; 
 import Button from "../../components/Button";
-import { checkout } from "../../assets";
+import checkout from "../../assets/checkout.svg";
 export const Checkout = () => {
   return (
     <Container>
-      <h2 className="tw-text-2xl tw-font-semibold tw-text-center sm:tw-hidden">
+      <h2 className="text-2xl font-semibold text-center sm:hidden">
         "Congratulations! Your Order Has Been Placed!"
       </h2>
-      <img className="tw-max-w-[17rem]" src={checkout} />
-      <div className="tw-py-10">
-        <h2 className="tw-text-2xl tw-font-semibold tw-text-center">
+      <img className="max-w-[17rem]" src={checkout} />
+      <div className="py-10">
+        <h2 className="text-2xl font-semibold text-center">
           Checkout
         </h2>
-        <p className="tw-pt-6 tw-text-paragraph tw-font-normal tw-max-w-[45rem] tw-text-center tw-hidden sm:tw-block">
+        <p className="pt-6 text-paragraph font-normal max-w-[45rem] text-center hidden sm:block">
           Brunch: One meal to rule them all! Grab this mega saver combo with
           your choice of 2 veg wraps, Aloo Paratha (2 pcs), chole and Curd
           lunchbox and 2 choco lava cakes. This is just bliss on a plate!

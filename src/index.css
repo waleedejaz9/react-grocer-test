@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
-}
+} */
 
 body {
-    background-color: #F3F6FF !important;
+    background-color: #F0F4FC !important;
     font-family: Poppins !important;
 }

@@ -1,13 +1,14 @@
 interface buttonProps {
-    text: string
+    text: string,
+    customClassName?: string
 }
 const Button = (props: buttonProps) => {
     return (
         <div>
-            <button className="tw-px-4 tw-py-2 tw-bg-[#EA5323] tw-rounded-3xl tw-text-white tw-text-sm tw-font-medium">
+            <button className="px-4 py-2 bg-[#EA5323] text-white font-poppins hover:bg-orange-600 " style={{ borderRadius: "50px", lineHeight: "37.5px", fontSize:"25px", fontWeight:"400" }}>
                 {props.text}
             </button>
         </div>
     )
 }
-export default Button
+export default Button;

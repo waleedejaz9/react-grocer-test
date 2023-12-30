@@ -1,6 +1,6 @@
 const Container = ({children}: {children:any}) =>{
 return (
-    <div className="tw-w-10/12 sm:tw-w-9/12 lg:tw-w-auto lg:tw-max-w-[49rem] xl:tw-max-w-[73rem]  tw-mx-auto tw-h-screen tw-flex tw-flex-col tw-justify-center tw-items-center">
+    <div className="w-full sm:w-9/12 lg:w-auto lg:max-w-[49rem] xl:max-w-[73rem] mx-auto h-screen flex flex-col justify-center items-center">
         {children}
     </div>
 )
