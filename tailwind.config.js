@@ -12,10 +12,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-
       Poppins: ["Poppins"],
-      Inter: ["Inter"]
-
+      Inter: ["Inter"],
     },
     extend: {
       backgroundImage: {
@@ -26,10 +24,12 @@ module.exports = {
       colors: {
         paragraph: "#808080",
         price: "#434141",
-        buttonColor: "#E74C1B"
+        buttonColor: "#E74C1B",
+        brownLight: "#A1A1A1",
       },
       background: () => ({
-        background: "#F0F4FC"
+        background: "#F0F4FC",
+        blackLight: "rgba(0,0,0,0.10)",
       }),
       fontSize: {
         45: "38px",
@@ -42,8 +42,8 @@ module.exports = {
         80: "80%",
       },
       height: {
-        '670px': '670px',
-        '400px': '540px'
+        "670px": "670px",
+        "400px": "540px",
       },
       padding: {},
       zIndex: {},
