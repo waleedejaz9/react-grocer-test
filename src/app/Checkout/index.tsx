@@ -13,7 +13,7 @@ const data = [
 
 export const Checkout = () => {
   return (
-    <div className=" h-screen pt-5">
+    <div className=" h-full">
       <div className=" md:bg-white md:h-5/12 mt-54 pb-1">
         <div className="w-11/12 sm:w-9/12 lg:w-auto lg:max-w-[49rem] xl:max-w-[73rem] mx-auto">
           <Hero text={"Checkout"} />
@@ -32,9 +32,8 @@ export const Checkout = () => {
                 return (
                   <div
                     key={index}
-                    className={`flex justify-between items-center py-3 lg:py-4 ${
-                      isLastItem ? "" : "border-b border-b-blackLight"
-                    }`}
+                    className={`flex justify-between items-center py-3 lg:py-4 ${isLastItem ? "" : "border-b border-b-blackLight"
+                      }`}
                   >
                     <div className="flex items-center gap-3">
                       <img className=" w-10" src={item.img} alt="logo" />

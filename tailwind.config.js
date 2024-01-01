@@ -25,6 +25,7 @@ module.exports = {
         paragraph: "#808080",
         price: "#434141",
         buttonColor: "#E74C1B",
+        buttonColor2: "#E74C0B",
         brownLight: "#A1A1A1",
       },
       background: () => ({

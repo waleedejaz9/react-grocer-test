@@ -7,6 +7,7 @@ import productImg from "../../assets/productImg.png";
 import product2 from "../../assets/prouct2.png";
 import Button from "../../components/Button";
 
+
 export const Product = () => {
   return (
     <div>

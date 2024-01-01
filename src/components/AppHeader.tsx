@@ -1,26 +1,49 @@
-import steak from "../assets/steak.png"
-import Button from "./Button";
+import searchIcon from "../assets/searchIcon.svg"
+import location from '../assets/location.svg'
+import logo from "../assets/logo.svg"
+import heartIcon from "../assets/heartIcon.svg";
+import cart from "../assets/cart.svg"
+import SearchDropdown from "./SearchComponent";
+
 export const AppHeader = () => {
-  return (<div className="bg-white h-14 border-b-2 border-grey-500 my-0.5 flex justify-between p-3">
-    <div>
-    <img className="rounded-full w-10" src={steak} alt="" />
-  </div>
-  <div>
-    <input type="text" />
-  </div>
-  <div className="flex">
-    <div>
-      Wapda town
+  return (
+    <div className="hidden md:block">
+      <div className="bg-white flex justify-center border-b-2 border-grey-500 my-0.5 ">
+        <div className="w-10/12 px-8">
+          <div className="bg-white h-16  flex justify-between p-3">
+            <div>
+              <img className="rounded-full w-10 hover:curor-pointer" src={logo} alt="" />
+            </div>
+            <div className="flex relative">
+              <SearchDropdown />              
+            </div>
+            <div className="flex gap-x-2">
+              <img src={location} alt="locationIcon" className="w-6 p-0.5 hover:cursor-pointer" />
+              <div>
+                <h5 className="font-semibold text-sm " >
+                  Wapda town
+                </h5>
+                <p className="text-xs text-buttonColor hover:cursor-pointer">
+                  Change
+                </p>
+              </div>
+              <div className="flex items-center hover:text-red-900 hover:cursor-pointer">
+                <img src={heartIcon} alt="" className="w-6 p-0.5 " />
+              </div>
+              <button className="bg-buttonColor px-5 py-2 rounded-full text-white">
+                Login
+              </button>
+              <button className="px-5 py-2 bg-gray-300 rounded-full flex gap-x-2 border-buttonColor">
+                <img src={cart} alt="" className="" />
+                <p className="text-buttonColor2">{1}</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div>
-      <img src={steak} alt="" />
-    </div>
-    <div>
-      <Button text="Log in"/>
-    </div>
-    <div>
-      button with cart
-    </div>
-  </div>
-  </div>);
+
+
+  );
 };
