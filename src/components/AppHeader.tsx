@@ -1,11 +1,10 @@
-import searchIcon from "../assets/searchIcon.svg"
 import location from '../assets/location.svg'
 import logo from "../assets/logo.svg"
 import heartIcon from "../assets/heartIcon.svg";
 import cart from "../assets/cart.svg"
 import SearchDropdown from "./SearchComponent";
 
-export const AppHeader = () => {
+export const AppHeader = ({cartQuantity}:{cartQuantity:number}) => {
   return (
     <div className="hidden md:block">
       <div className="bg-white flex justify-center border-b-2 border-grey-500 my-0.5 ">
@@ -35,7 +34,7 @@ export const AppHeader = () => {
               </button>
               <button className="px-5 py-2 bg-gray-300 rounded-full flex gap-x-2 border-buttonColor">
                 <img src={cart} alt="" className="" />
-                <p className="text-buttonColor2">{1}</p>
+                <p className="text-buttonColor2">{typeof(cartQuantity)==="number" ? cartQuantity: 0 }</p>
               </button>
             </div>
           </div>
