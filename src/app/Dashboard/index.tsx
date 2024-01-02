@@ -3,7 +3,6 @@ import CampainSlider from "../../components/CampaignSlider";
 import wavingHand from "../../assets/wavingHand.svg"
 import greenSalad from "../../assets/greenSalad.png"
 import steak from "../../assets/steak.png"
-import freshVegetable from "../../assets/freshVegetable.png"
 import search from "../../assets/search.svg"
 import salad from "../../assets/salad.png"
 import Item from "../../components/Item";
@@ -117,13 +116,6 @@ export const Dashboard = () => {
                                 currency="$"
                                 image={{ src: greenSalad, alt: "greenSalad" }}
                             />
-                            <Item
-                                name={"Fresh vegetable salad"}
-                                price={11.22}
-                                currency="$"
-                                image={{ src: freshVegetable, alt: "greenSalad" }}
-                            />
-
                             <Item
                                 name={"SIMPLE JOYS BAKERY Sliced Lemon Cake"}
                                 price={7.22}
