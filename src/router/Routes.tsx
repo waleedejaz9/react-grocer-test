@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 // import { AppUrls } from "@/static/app_routes";
 import { DashboardLayout } from "../Layout";
-import { OrderPlaced, MyBucket, Checkout, Product } from "../app/index";
+import { OrderPlaced, MyBucket, Checkout, Product,Dashboard } from "../app/index";
 
 const AppRoutes = () => {
   return (
@@ -13,6 +13,8 @@ const AppRoutes = () => {
         <Route path="/my-bucket" element={<MyBucket />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/product" element={<Product />} />
+        <Route path="/" element={<Dashboard />} />
+
 
       </Route>
     </Routes>
