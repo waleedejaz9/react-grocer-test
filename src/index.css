@@ -12,3 +12,11 @@ body {
     background-color: #F0F4FC !important;
     font-family: Poppins !important;
 }
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: none;
+}

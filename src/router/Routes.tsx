@@ -13,6 +13,7 @@ const AppRoutes = () => {
         <Route path="/my-bucket" element={<MyBucket />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/product" element={<Product />} />
+
       </Route>
     </Routes>
   );

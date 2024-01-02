@@ -41,10 +41,14 @@ module.exports = {
       },
       width: {
         80: "80%",
+        "tw": "100rem",
+        "ll": "75rem",
+        "dd": "45rem"
       },
       height: {
         "670px": "670px",
         "400px": "540px",
+        "27rem": "27.9rem"
       },
       padding: {},
       zIndex: {},
