@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom";
 import Container from "../../components/Container";
+
 import Button from "../../components/Button";
 import checkout from "../../assets/checkout.svg";
 import backSvg from "../../assets/backSvg.svg";
 export const OrderPlaced = () => {
+
   return (
     <Container classes="w-full sm:w-9/12 lg:w-auto lg:max-w-[49rem] xl:max-w-[73rem] mx-auto relative h-screen flex flex-col justify-center items-center">
       <img className="absolute top-10 left-3 lg:hidden" src={backSvg} />
@@ -20,7 +23,9 @@ export const OrderPlaced = () => {
           lunchbox and 2 choco lava cakes. This is just bliss on a plate!
         </p>
       </div>
-      <Button text="Return Home" />
+      <Link to="/">
+      <Button text="Return Home"  />
+      </Link>
     </Container>
   );
 };

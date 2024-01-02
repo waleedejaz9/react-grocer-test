@@ -1,14 +1,17 @@
+import { Link } from "react-router-dom";
 import Button from "../components/Button";
 
 interface PriceSectionProps {
   price: number;
+  Link?: string;
   buttonText: string;
   totalText: boolean;
+  customClassName?: string;
 }
 
 const PriceSection = (props: PriceSectionProps) => {
   return (
-    <div className="flex justify-between">
+    <div className={`flex gap-x-14 ${props.customClassName || ""}`}>
       <div className="flex flex-col">
         <p className="text-price font-Inter font-normal leading-5 text-base ">
           {props.totalText ? "Total" : "Price"}
@@ -17,8 +20,9 @@ const PriceSection = (props: PriceSectionProps) => {
           $ <span className="text-black">{props.price}</span>
         </h2>
       </div>
-
+    <Link to={props.Link || "#"}>
       <Button text={props.buttonText} />
+    </Link>
     </div>
   );
 };

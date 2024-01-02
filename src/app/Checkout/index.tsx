@@ -21,17 +21,17 @@ export const Checkout = () => {
   return (
     <div className=" h-full">
       <div className=" md:bg-white md:h-5/12 mt-54 pb-1">
-        <div className="w-11/12 sm:w-9/12 lg:w-auto lg:max-w-[49rem] xl:max-w-[73rem] mx-auto">
+        <div className="w-11/12 sm:w-9/12 lg:w-auto lg:max-w-[49rem] xl:max-w-[73rem] mx-auto mt-14">
           <Hero text={"Checkout"} />
         </div>
       </div>
-      <Container classes="w-11/12 sm:w-9/12 lg:w-auto lg:max-w-[49rem] xl:max-w-[73rem] mx-auto mt-2 lg:mt-16">
+      <Container classes="w-10/12 sm:w-9/12 lg:w-auto lg:max-w-[49rem] xl:max-w-[73rem] mx-auto mt-2 lg:mt-16">
         <div className="flex flex-col lg:flex-row gap-0 lg:gap-20">
           <div className="flex flex-col w-full lg:w-6/12">
             <h2 className="font-semibold font-Poppins text-2xl lg:text-base text-black mt-3 mb-5">
               Payment
             </h2>
-            <div className="bg-white rounded-xl py-1 lg:py-2 px-6">
+            <div className="bg-white rounded-xl py-1 lg:py-2 px-6 mt-3 cursor-pointer">
               {data.map((item, index, array) => {
                 const isLastItem = index === array.length - 1;
 
@@ -51,7 +51,7 @@ export const Checkout = () => {
                     </div>
                     <input
                       type="radio"
-                      className={`input-radio ${
+                      className={`curor-pointer input-radio ${
                         selectedItem === index ? "on" : ""
                       }`}
                     />
@@ -60,7 +60,7 @@ export const Checkout = () => {
               })}
             </div>
             <div>
-              <h2 className="font-semibold font-Poppins text-2xl lg:text-base  text-black my-6 lg:mt-6 mb-3">
+              <h2 className="font-semibold font-Poppins text-2xl lg:text-base mt-8 text-black my-6 lg:mt-6 mb-3">
                 Delivery details
               </h2>
               <p className="font-Poppins text-base text text-brownLight leading-7 font-normal max-w-[15rem]">
@@ -73,7 +73,7 @@ export const Checkout = () => {
               <h2 className="font-semibold font-Poppins text-2xl lg:text-base text-black mt-6 mb-2 lg:mt-6 lg:mb-3">
                 Order details
               </h2>
-              <ul className="flex flex-wrap">
+              <ul className="flex flex-wrap mt-7">
                 {[
                   "1x Green salad",
                   "3x Grilled steak",
@@ -89,8 +89,8 @@ export const Checkout = () => {
                 })}
               </ul>
             </div>
-            <div className="pt-5 lg:pt-8 ">
-              <PriceSection price={133.03} buttonText="Pay Now" totalText />
+            <div className="pt-5 lg:pt-8 mt-6 ">
+              <PriceSection price={133.03} buttonText="Pay Now" totalText Link="/order-placed"/>
             </div>
           </div>
         </div>

@@ -87,7 +87,7 @@ export const MyBucket = () => {
           <div className="" style={{ marginTop: "30px" }}>
             <Products productsArray={productsList} />
             <div className="mt-14 md:mt-10 md:mr-20">
-              <PriceSection price={233.03} buttonText="Checkout" totalText />
+              <PriceSection price={233.03} buttonText="Checkout" totalText customClassName="justify-between md:justify-end" Link="/checkout" />
             </div>
           </div>
         </div>

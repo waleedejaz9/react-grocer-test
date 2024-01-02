@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import favouriteIcon from '../assets/favouriteIcon.svg'
 
 interface productType {
@@ -16,7 +17,7 @@ interface Image {
 
 const Item = (props: productType) => {
     return (
-        <div>
+        <Link to="/product">
         <div className="bg-white h-72 w-44 pb-4 rounded-3xl hover:cursor-pointer md:flex md:flex-col" style={{borderRadius:"0px, 0px, 20px, 20px"}}>
            <div className='flex justify-center'>
             <img src={props.image.src} alt={props.image.alt}  />
@@ -32,7 +33,7 @@ const Item = (props: productType) => {
             </div>
                     
         </div>
-        </div>
+        </Link>
 
     )
 }

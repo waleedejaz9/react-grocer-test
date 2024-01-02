@@ -77,6 +77,7 @@ export const Product = () => {
                 price={25.27}
                 buttonText="Add to cart"
                 totalText={false}
+                
               />
             </div>
           </div>
