@@ -86,8 +86,8 @@ export const MyBucket = () => {
         <div className="" style={{ width: "88%" }}>
           <div className="" style={{ marginTop: "30px" }}>
             <Products productsArray={productsList} />
-            <div className="mt-14 md:mt-10 flex justify-center md:justify-end md:mr-20">
-              <PriceSection price={233.03} buttonText="Checkout" />
+            <div className="mt-14 md:mt-10 md:mr-20">
+              <PriceSection price={233.03} buttonText="Checkout" totalText />
             </div>
           </div>
         </div>

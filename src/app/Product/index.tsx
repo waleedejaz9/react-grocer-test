@@ -5,8 +5,7 @@ import add from "../../assets/add.svg";
 import minus from "../../assets/minus.svg";
 import productImg from "../../assets/productImg.png";
 import product2 from "../../assets/prouct2.png";
-import Button from "../../components/Button";
-
+import PriceSection from "../../components/PriceSection";
 
 export const Product = () => {
   return (
@@ -15,13 +14,13 @@ export const Product = () => {
         <div className="h-screen flex bg-transparent  justify-between lg:w-auto lg:max-w-[49rem] xl:max-w-[73rem] mx-auto pt-0 lg:pt-14">
           <div className="w-full lg:w-[35%] ">
             <div className="bg-white rounded-b-[40px]">
-              <div className="w-11/12 sm:w-9/12 lg:w-auto lg:max-w-[49rem] xl:max-w-[73rem] mx-auto">
-                <div className="flex justify-between pt-4 lg:hidden ">
+              <div>
+                <div className="flex justify-between pt-10 pb-6 lg:hidden w-11/12  lg:w-auto lg:max-w-[49rem] xl:max-w-[73rem] mx-auto">
                   <img className="cursor-pointer" src={backSvg} alt="backSvg" />
                   <img className="w-6 cursor-pointer" src={like} alt="like" />
                 </div>
-                <div>
-                  <h3 className="font-Poppins text-xl lg:text-3xl font-semibold pt-4 flex gap-2">
+                <div className=" lg:w-auto lg:max-w-[49rem] xl:max-w-[73rem] ml-6 ">
+                  <h3 className="font-Poppins text-xl lg:text-3xl font-semibold pt-4 flex gap-2 w-9/12 lg:w-auto">
                     Grilled Beef Steak with Mushroom sauce
                     <img
                       className="w-6 hidden lg:block cursor-pointer"
@@ -40,15 +39,15 @@ export const Product = () => {
                           4.5
                         </p>
                       </div>
-                      <div className="flex items-center flex-col lg:flex-row w-fit gap-0 lg:gap-4 m-0 lg:my-10">
+                      <div className="flex items-center flex-col lg:flex-row w-fit gap-0 lg:gap-4 m-0 lg:my-10 ml-3">
                         <img
-                          className="w-7 mb-1.5 lg:mb-0 cursor-pointer"
+                          className="w-12 mb-1.5 lg:mb-0 cursor-pointer"
                           src={add}
                           alt="add"
                         />
-                        <p className="text-2xl text-black font-Inter">1</p>
+                        <p className="text-3xl text-black font-Inter">1</p>
                         <img
-                          className="w-7 mt-1.5 lg:mt-0 cursor-pointer"
+                          className="w-12 mt-1.5 lg:mt-0 cursor-pointer"
                           src={minus}
                           alt="minus"
                         />
@@ -64,7 +63,7 @@ export const Product = () => {
                   <h3 className="text-black text-lg font-Poppins font-semibold">
                     Description
                   </h3>
-                  <p className="text-sm font-Poppins font-normal text-brownLight pt-1 pb-4">
+                  <p className="text-sm font-Poppins font-normal text-brownLight pt-1 pb-4 leading-6 w-10/12 lg:w-auto">
                     Indulge in the mouthwatering delight of a perfectly grilled
                     beef steak generously topped with a rich and savory mushroom
                     sauce.
@@ -72,16 +71,13 @@ export const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="pt-2 lg:pt-8 flex flex-row justify-between items-end lg:items-start w-11/12 mx-auto">
-              <div>
-                <p className="text-sm text-paragraph font-normal font-Poppins">
-                  Price
-                </p>
-                <h2 className="text-black text-2xl font-Poppins font-medium pt-1 pb-0 lg:pb-9 ">
-                  <span className="text-buttonColor">$</span> 25.27
-                </h2>
-              </div>
-              <Button text="Add To Cart" />
+
+            <div className="pt-5 lg:pt-8 w-11/12 mx-auto">
+              <PriceSection
+                price={25.27}
+                buttonText="Add to cart"
+                totalText={false}
+              />
             </div>
           </div>
           <div className="hidden lg:block w-[30%]">
